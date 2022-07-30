@@ -1,45 +1,41 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body{
     background-color: hsl(0, 0%, 95%);
-    width: 100%;
+   display: flex;
+    place-items: center;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    width: 50%;
+    margin: auto;
 }
-.flex1{
-    width: 100%;
-    max-width: 1440px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
+main{
+    display: grid;
+    grid-template-areas: " a  b  c";
 }
-.flex2{
-    width: 269px;
-    padding:15px;
-    min-height:375px;
+main{
+padding: 2em;
+text-align: center;
+
 }
-.box{
+
+.boxcontent1{
     background-color: hsl(31, 77%, 52%);
+    grid-area: a;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+
 }
-.box1{
+.boxcontent2{
     background-color: hsl(184, 100%, 22%);
-   
-}
-.box2{
+    grid-area: b;
+    }
+.boxcontent3{
     background-color: hsl(179, 100%, 13%);
+    grid-area: c;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-.boxcontent{
-    padding: 10px;
 }
 h1{
     color: hsl(0,0%, 95%);
@@ -74,3 +70,5 @@ p{
     color: hsl(179, 100%, 13%);
 
 }
+
+    
